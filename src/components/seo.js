@@ -44,7 +44,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: `https://epic-ride-8ab43e.netlify.app/${metaImage}`,
+          content: `https://epic-ride-8ab43e.netlify.app${metaImage}`,
         },
         {
           name: `twitter:card`,
