@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Helmet } from "react-helmet";
 
+import metaImage from "./../images/social.jpg";
+
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
@@ -39,6 +41,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `https://epic-ride-8ab43e.netlify.app/${metaImage}`,
         },
         {
           name: `twitter:card`,
